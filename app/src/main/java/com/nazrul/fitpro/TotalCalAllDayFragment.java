@@ -69,7 +69,7 @@ public class TotalCalAllDayFragment extends Fragment {
 
                     result = df.format(calculate);
 
-                    DailyTotalCalNeed.setText("আপনার প্রদিতিন " + result + " ক্যালরি শক্তি দরকার");
+                    DailyTotalCalNeed.setText("আপনার প্রতিদিন " + result + " ক্যালরি শক্তি দরকার");
                 }
                 else if(WorkType2.isChecked()){
                     String BMR = EditTextGiveBMR.getText().toString();
@@ -79,7 +79,7 @@ public class TotalCalAllDayFragment extends Fragment {
 
                     result = df.format(calculate);
 
-                    DailyTotalCalNeed.setText("আপনার প্রদিতিন " + result + " ক্যালরি শক্তি দরকার");
+                    DailyTotalCalNeed.setText("আপনার প্রতিদিন " + result + " ক্যালরি শক্তি দরকার");
 
                 }
                 else if(WorkType3.isChecked()){
@@ -90,7 +90,7 @@ public class TotalCalAllDayFragment extends Fragment {
 
                     result = df.format(calculate);
 
-                    DailyTotalCalNeed.setText("আপনার প্রদিতিন " + result + " ক্যালরি শক্তি দরকার");
+                    DailyTotalCalNeed.setText("আপনার প্রতিদিন " + result + " ক্যালরি শক্তি দরকার");
                 }
                 else if(WorkType4.isChecked()){
                     String BMR = EditTextGiveBMR.getText().toString();
@@ -100,7 +100,7 @@ public class TotalCalAllDayFragment extends Fragment {
 
                     result = df.format(calculate);
 
-                    DailyTotalCalNeed.setText("আপনার প্রদিতিন " + result + " ক্যালরি শক্তি দরকার");
+                    DailyTotalCalNeed.setText("আপনার প্রতিদিন " + result + " ক্যালরি শক্তি দরকার");
                 }
                 else if(WorkType5.isChecked()){
                     String BMR = EditTextGiveBMR.getText().toString();
@@ -110,7 +110,7 @@ public class TotalCalAllDayFragment extends Fragment {
 
                     result = df.format(calculate);
 
-                    DailyTotalCalNeed.setText("আপনার প্রদিতিন " + result + " ক্যালরি শক্তি দরকার");
+                    DailyTotalCalNeed.setText("আপনার প্রতিদিন " + result + " ক্যালরি শক্তি দরকার");
                 }
                 else{
                     Toast.makeText(getActivity(), "আগে কাজের ধরণ বাছাই করুন", Toast.LENGTH_SHORT).show();
