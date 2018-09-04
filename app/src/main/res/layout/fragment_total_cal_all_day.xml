@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TotalCalAllDayFragment">
+
+
+    <TextView
+        android:id="@+id/textViewalldaycalTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="20dp"
+        android:text="@string/textViewalldaycalTitle"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/LinearVr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewalldaycalTitle"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/textViewworktype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/textViewworktype"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxWork1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/checkBoxWork1"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxWork2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/checkBoxWork2"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxWork3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/checkBoxWork3"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxWork4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/checkBoxWork4"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxWork5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/checkBoxWork5"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewDaillCalNeed"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="0dp"
+        android:textAlignment="center"
+        android:textColor="?android:attr/colorFocusedHighlight"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/LinearHR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="176dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/textViewGiveBMR"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/textViewGiveBMR"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextEnterBMR"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/editTextEnterBMRhint"
+            android:inputType="numberDecimal"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonDailyCal"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="115dp"
+        android:layout_marginEnd="18dp"
+        android:text="@string/buttonDailyCal" />
+
+</RelativeLayout>

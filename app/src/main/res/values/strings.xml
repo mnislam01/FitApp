@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">ফিটাপ</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="nav_head_main_title">ফিটাপঃ থাকুন ফিট সবসময় </string>
+    <string name="nav_bmi_Title"> BMI হিসাব </string>
+    <string name="textViewHead">ফিটাপ: স্বাস্থ্য রাখুন ফিট</string>
+    <string name="textViewDescription">
+
+        জীবন ধারণের জন্য যেমন খাদ্য অপরিহার্য, তেমনি সুস্বাস্থ্যের জন্য প্রয়োজন খারাবের প্রতি নিয়ন্ত্রণ। চলাফেরা, খেলাধুলা ইত্যাদি
+        সব কাজে শক্তি ব্যয় হয়। সেই শক্তি আসে খাবার থেকে। কিন্তু খাবার হতে পাওয়া শক্তি যদি ব্যয় করা না হয়, তা শরীরে অতিরিক্ত
+        চর্বি হয়ে জমা থাকে। <b>অতিরিক্ত চর্বি স্থুলতার কারণ</b>।
+        \n\n
+        আমরা যদি কোন কাজ না করি, শুধু শুয়ে বসে থাকি, তবুও আমাদের খাদ্যের দরকার হয়, ক্ষুদা লাগে। কারণ বিশ্রামরত অবস্থায়ও
+        শরীর শক্তি ব্যয় করে।
+        \n\n
+        <i>এই ব্যায়িত শক্তির পরিমাণ নির্ভর করে লিঙ্গ, বয়স, উচ্চতা ও ওজনের উপর। কোন ব্যক্তির শরীর বিশ্রামরত অবস্থায় যে পরিমাণ
+            শক্তি ব্যয় করে তাকে বলা হয় Body Metabolic Rate, সংক্ষেপে <b>BMR</b>.</i>
+        \n\n
+        কোন ব্যক্তি যদি তার <b>BMR</b> জানেন তাহলে তিনি প্রতিদিনের পরিশ্রম করার অভ্যাস অনুয়াযী তাঁর খাবার তালিকা ঠিক করতে পারেন। এতে প্রয়োজনের
+        অতিরিক্ত ক্যালরি নেওয়া থেকে যেমন বিরত থাকা যায় পাশাপাশি তাঁর দৈনন্দিন কাজের ধরণ অনুযায়ী কতটুকু ক্যালরি দরকার সেই ধারণাও পাওয়া যায়।
+        \n\n
+        <i>একজন ব্যক্তির দেহের গড়ন এবং তাঁর শরীরে জমা হওয়া চর্বির একটি সূচক আছে। একে বলা হয়ঃ Body Mass Index, সংক্ষেপে <b>BMI</b>.
+            এই সূচক নির্দেশ করে একজন ব্যক্তি কি পরিমাণ স্থুল।</i>
+        \n\n
+        এই App এ আপনি প্রচলিত যেসব পদ্ধতিতে <b>BMI</b> এবং <b>BMR</b> জানা যায় সেই পদ্ধতিতে আপনার Body Metabolic Rate এবং Body Mass
+        Index জানতে পারবেন।
+        \n\n
+        <b>নিয়িমিত আপনার BMI এবং BMR চেক করুণ, সুস্থ থাকুন।</b>
+        \n\n
+
+    </string>
+
+    <string name="textViewBMItitle"> <b>BMI</b> হিসাব করুন </string>
+    <string name="textViewBMR"> <b>BMR</b> হিসাব করুন</string>
+    <string name="textViewHeight"> উচ্চতাঃ </string>
+    <string name="textViewWeight"> ওজনঃ </string>
+    <string name="textViewHeightBMR"> উচ্চতাঃ </string>
+    <string name="textViewWeightBMR"> ওজনঃ </string>
+    <string name="textViewAgeBMR"> বয়সঃ </string>
+    <string name="textViewSexBMR"> লিঙ্গঃ  </string>
+    <string name="checkBoxMale"> পুরুষ </string>
+    <string name="checkBoxFemale"> স্ত্রী </string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="editTextWeightHint">কেজিতে ওজন লিখুন</string>
+    <string name="editTextHeightHint">সেন্টিমিটারে উচ্চতা লিখুন</string>
+    <string name="buttonCalcBMI">হিসাব করুন</string>
+    <string name="buttonBMRcalc"> হিসাব করুন</string>
+    <string name="textViewDesCase1"> আপনার <b>BMI Index</b> ১৮.৫ এর নিচে। আপনার শরীরের ওজন কম। পরিমিত খাদ্য গ্রহণে ওজন বাড়াতে হবে। </string>
+    <string name="textViewDesCase2"> আপনার <b>BMI Index</b> ১৮.৫ - ২৪.৯ এর মধ্যে। আপনি সুস্বাস্থের অধুকারী। সুস্বাস্থ্য ধরে রাখার চেষ্টা করুণ। </string>
+    <string name="textViewDesCase3">
+        আপনার <b>BMI Index</b> ২৫ - ২৯.৯ এর মধ্যে। প্রয়োজনের অতিরিক্ত ওজন আছে আপনার শরীরে। নিয়মিত হাঁটাচলাফেলা করুণ। লিফট বাদ দিয়ে সিঁড়ি ব্যহবার করতে পারেন।
+        বেভারেজ জাতীয় পাণীয় পরিহার করুণ। মেডিটেশন করুণ চিন্তা দূর করতে।
+    </string>
+    <string name="textViewDesCase4">
+        আপনার <b>BMI Index</b> ৩০ - ৩৪.৯ এর মধ্যে। আপনি মোটা হওয়ার প্রথম স্থরে আছেন। ডায়েট তালিকা করে খাদ্য গ্রহণ করুণ। নিয়মিত
+        ব্যায়াম করুণ। ১ কিলোমিটার দূরত্বে কোথাও যেতে হলে প্রতিদিন হেটে যান। অতিরিক্ত চর্বি জাতীয় খাদ্য পরিহার করুণ। ভাতের পরিবর্তে কমপক্ষে একবার রুটি খেতে পারেন। </string>
+    <string name="textViewDesCase5">
+        আপনার <b>BMI Index</b> ৩৫ - ৩৯.৯ এর মধ্যে। আপনি মোটা হওয়ার দ্বিতীয় স্থরে আছেন। আপনাকে অবশ্যই একজন ডাক্তারের পরামর্শে
+        খাদ্য গ্রহনের তালিকা তৈরী করে নিতে হবে। প্রতিদিন কমপক্ষে ২ ঘন্টা জোরে হাঁটতে হবে। কমপক্ষে ১ ঘন্টা ঘাম ঝরানো ব্যায়াম করতে হবে।
+    </string>
+    <string name="textViewDesCase6">
+        আপনার <b>BMI Index</b> ৪০ এর উপর। আপনি মোটা হওয়ার তৃতীয় স্থরে আছেন। আপনি স্থুলতা জনিত ঝুঁকিতে আছেন। এখনই
+        কোন পদক্ষেপ না নিলে স্থুলতা জনিত রোগ দেখা দিতে পারে এবং মৃত্যুও ঘটতে পারে।
+    </string>
+    <string name="nav_bmr_Title">BMR হিসাব</string>
+    <string name="nav_alldayCalorie_Title">সারাদিনের ক্যালরি হিসাব</string>
+    <string name="nav_suggestion_Title"> জেনে নিন </string>
+    <string name="editTextAgeBMR">আপনার বর্তমান বয়স লিখুন</string>
+    <string name="editTextWeightBMR">কেজিতে ওজন লিখুন</string>
+    <string name="editTextHeightBMR">সেন্টিমিটারে উচ্চতা লিখুন</string>
+    <string name="textViewalldaycalTitle"> দিনের কত ক্যালরি দরকার? </string>
+    <string name="textViewworktype"> নিচের যে কোন একটি প্রতিদিনের কাজের ধরণ বাছাই করুন </string>
+    <string name="checkBoxWork1"> পরিশ্রমী না </string>
+    <string name="checkBoxWork2"> হালকা পরিশ্রমী, সপ্তাহে ২-৩ দিন খেলাধুলা করা হয়</string>
+    <string name="checkBoxWork3"> পরিশ্রমী, সপ্তাহে ২-৩ দিন খেলাধুলা করা হয়</string>
+    <string name="checkBoxWork4"> পরিশ্রমী, প্রতিদিন প্রচুর খেলাধুলা করা হয়</string>
+    <string name="checkBoxWork5"> অত্যন্ত পরিশ্রমী, প্রচুর দৌড়ঝাঁপ, খেলাধুলা করা হয়</string>
+    <string name="textViewDaillCalNeed1"> আপনার প্রতিদিন </string>
+    <string name="textViewDaillCalNeed2"> ক্যালরি শক্তি দরকার</string>
+    <string name="textViewGiveBMR"> BMR </string>
+    <string name="editTextEnterBMRhint"> আপনার BMR লিখুন </string>
+    <string name="buttonDailyCal"> হিসাব করুন  </string>
+    <string name="nav_fitapp"> নির্মাতা </string>
+    <string name="textViewDeveloper"> M Nazrul Islam </string>
+    <string name="textViewDeveloperGit"> Github </string>
+    <string name="textViewDeveloperFacebook"> Facebook </string>
+    <string name="textViewDeveloperLinkedin"> Linkedin </string>
+    <string name="textViewAlmaMater"> IIUC, CSE </string>
+</resources>

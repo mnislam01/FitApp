@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/Share"
+        android:icon="@drawable/share"
+        android:orderInCategory="100"
+        android:title=" অ্যাপটি শেয়ার করুন"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Exit"
+        android:icon="@drawable/exit"
+        android:orderInCategory="101"
+        android:title="অ্যাপ ত্যাগ করুন"
+        app:showAsAction="never" />
+
+
+</menu>

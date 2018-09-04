@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FitappFragment">
+
+
+    <TextView
+        android:id="@+id/textViewDeveloper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="113dp"
+        android:text="@string/textViewDeveloper"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#7b2d47"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:typeface="normal" />
+
+
+    <TextView
+        android:id="@+id/textViewAlmaMater"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewDeveloper"
+        android:text="@string/textViewAlmaMater"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="199dp"
+        android:orientation="horizontal"
+        android:paddingEnd="50dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingStart="50dp">
+
+        <ImageView
+            android:id="@+id/imageViewGit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/git"
+            android:contentDescription="TODO" />
+
+        <ImageView
+            android:id="@+id/imageViewFB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/fb"
+            android:contentDescription="TODO" />
+
+        <ImageView
+            android:id="@+id/imageViewLinkedin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="TODO"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/linkedin" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MBIFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textViewBMItitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="-384dp"
+        android:layout_toStartOf="@id/linearVr1"
+        android:text="@string/textViewBMItitle"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linearVr1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewBMItitle"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/liinearHr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/textViewHeight"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="@string/textViewHeight"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/editTextHeight"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/editTextHeightHint"
+                android:inputType="numberDecimal"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearHr2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/textViewWeight"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="@string/textViewWeight"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/editTextWeight"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/editTextWeightHint"
+                android:inputType="numberDecimal"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonCalcBMI"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="205dp"
+        android:text="@string/buttonCalcBMI"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="170dp"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="?android:attr/colorFocusedHighlight"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewDes"
+        android:layout_width="match_parent"
+        android:layout_height="169dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewResult"
+        android:layout_marginTop="-170dp"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="?android:attr/statusBarColor"
+        android:textSize="24sp" />
+
+
+</RelativeLayout>

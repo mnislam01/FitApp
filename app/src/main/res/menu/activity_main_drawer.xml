@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!--
+    Adding navigation drawer menu items.
+    -->
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_bmi"
+            android:icon="@drawable/bmi"
+            android:title="BMI মাপুন" />
+        <item
+            android:id="@+id/nav_bmr"
+            android:icon="@drawable/bmr"
+            android:title="BMR মাপুন" />
+        <item
+            android:id="@+id/nav_alldayCalorie"
+            android:icon="@drawable/alldaycal"
+            android:title="সারাদিনের ক্যালরি হিসাব" />
+        <item
+            android:id="@+id/nav_suggestion"
+            android:icon="@drawable/tips"
+            android:title="জেনে নিন" />
+
+        <item
+            android:id="@+id/nav_fitapp"
+            android:icon="@drawable/fitapp"
+            android:title="নির্মাতা" />
+    </group>
+
+</menu>
