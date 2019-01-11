@@ -58,11 +58,12 @@ public class TotalCalAllDayFragment extends Fragment {
             public void onClick(View v) {
                 Double calculate;
                 DecimalFormat df = new DecimalFormat("####.#");
+                String BMR = EditTextGiveBMR.getText().toString();
 
 
-                if(WorkType1.isChecked()){
+                if(WorkType1.isChecked() && !BMR.isEmpty()){
 
-                    String BMR = EditTextGiveBMR.getText().toString();
+                    //String BMR = EditTextGiveBMR.getText().toString();
                     Double bmr = Double.parseDouble(BMR);
                     String result;
                     calculate = bmr * 1.2;
@@ -71,8 +72,8 @@ public class TotalCalAllDayFragment extends Fragment {
 
                     DailyTotalCalNeed.setText("আপনার প্রতিদিন " + result + " ক্যালরি শক্তি দরকার");
                 }
-                else if(WorkType2.isChecked()){
-                    String BMR = EditTextGiveBMR.getText().toString();
+                else if(WorkType2.isChecked() && !BMR.isEmpty()){
+                    //String BMR = EditTextGiveBMR.getText().toString();
                     Double bmr = Double.parseDouble(BMR);
                     String result;
                     calculate = bmr * 1.375;
@@ -82,8 +83,8 @@ public class TotalCalAllDayFragment extends Fragment {
                     DailyTotalCalNeed.setText("আপনার প্রতিদিন " + result + " ক্যালরি শক্তি দরকার");
 
                 }
-                else if(WorkType3.isChecked()){
-                    String BMR = EditTextGiveBMR.getText().toString();
+                else if(WorkType3.isChecked() && !BMR.isEmpty()){
+                    //String BMR = EditTextGiveBMR.getText().toString();
                     Double bmr = Double.parseDouble(BMR);
                     String result;
                     calculate = bmr * 1.55;
@@ -92,8 +93,8 @@ public class TotalCalAllDayFragment extends Fragment {
 
                     DailyTotalCalNeed.setText("আপনার প্রতিদিন " + result + " ক্যালরি শক্তি দরকার");
                 }
-                else if(WorkType4.isChecked()){
-                    String BMR = EditTextGiveBMR.getText().toString();
+                else if(WorkType4.isChecked() && !BMR.isEmpty()){
+                    //String BMR = EditTextGiveBMR.getText().toString();
                     Double bmr = Double.parseDouble(BMR);
                     String result;
                     calculate = bmr * 1.725;
@@ -102,8 +103,8 @@ public class TotalCalAllDayFragment extends Fragment {
 
                     DailyTotalCalNeed.setText("আপনার প্রতিদিন " + result + " ক্যালরি শক্তি দরকার");
                 }
-                else if(WorkType5.isChecked()){
-                    String BMR = EditTextGiveBMR.getText().toString();
+                else if(WorkType5.isChecked() && !BMR.isEmpty()){
+                    //String BMR = EditTextGiveBMR.getText().toString();
                     Double bmr = Double.parseDouble(BMR);
                     String result;
                     calculate = bmr * 1.9;
@@ -113,7 +114,12 @@ public class TotalCalAllDayFragment extends Fragment {
                     DailyTotalCalNeed.setText("আপনার প্রতিদিন " + result + " ক্যালরি শক্তি দরকার");
                 }
                 else{
-                    Toast.makeText(getActivity(), "আগে কাজের ধরণ বাছাই করুন", Toast.LENGTH_SHORT).show();
+                    if(BMR.isEmpty()){
+                        Toast.makeText(getActivity(), "কাজের ধরণ বাছাই করুন এবং BMR লিখুন", Toast.LENGTH_SHORT).show();
+                    }
+                    else{
+                        Toast.makeText(getActivity(), "আগে কাজের ধরণ বাছাই করুন", Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
         });

@@ -18,22 +18,25 @@
                 android:id="@+id/textViewHead"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="casual"
                 android:lineSpacingExtra="8sp"
                 android:text="@string/textViewHead"
                 android:textAlignment="center"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:typeface="monospace" />
 
             <TextView
                 android:id="@+id/textViewDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="4dp"
-                android:paddingRight="4dp"
+                android:fontFamily="casual"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
                 android:paddingTop="10dp"
                 android:text="@string/textViewDescription"
-                android:textAlignment="textStart"
-                android:textSize="18sp" />
+                android:textSize="20sp"
+                android:typeface="monospace" />
 
         </LinearLayout>
     </ScrollView>

@@ -8,7 +8,7 @@
     <string name="action_settings">Settings</string>
     <string name="nav_head_main_title">ফিটাপঃ থাকুন ফিট সবসময় </string>
     <string name="nav_bmi_Title"> BMI হিসাব </string>
-    <string name="textViewHead">ফিটাপ: স্বাস্থ্য রাখুন ফিট</string>
+    <string name="textViewHead"> কেন ফিটাপ </string>
     <string name="textViewDescription">
 
         জীবন ধারণের জন্য যেমন খাদ্য অপরিহার্য, তেমনি সুস্বাস্থ্যের জন্য প্রয়োজন খারাবের প্রতি নিয়ন্ত্রণ। চলাফেরা, খেলাধুলা ইত্যাদি
@@ -73,7 +73,7 @@
     <string name="editTextAgeBMR">আপনার বর্তমান বয়স লিখুন</string>
     <string name="editTextWeightBMR">কেজিতে ওজন লিখুন</string>
     <string name="editTextHeightBMR">সেন্টিমিটারে উচ্চতা লিখুন</string>
-    <string name="textViewalldaycalTitle"> দিনের কত ক্যালরি দরকার? </string>
+    <string name="textViewalldaycalTitle"> দিনে কত ক্যালরি দরকার? </string>
     <string name="textViewworktype"> নিচের যে কোন একটি প্রতিদিনের কাজের ধরণ বাছাই করুন </string>
     <string name="checkBoxWork1"> পরিশ্রমী না </string>
     <string name="checkBoxWork2"> হালকা পরিশ্রমী, সপ্তাহে ২-৩ দিন খেলাধুলা করা হয়</string>

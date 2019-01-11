@@ -13,16 +13,9 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="150dp"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
         app:srcCompat="@drawable/manwomenlogo" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="@string/nav_head_main_title"
-        android:textSize="18sp" />
-
 
 
 </LinearLayout>

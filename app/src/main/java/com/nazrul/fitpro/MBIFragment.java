@@ -15,7 +15,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.w3c.dom.Text;
 
 import java.text.DecimalFormat;
 
@@ -35,11 +34,11 @@ public class MBIFragment extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(final LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        View MainView = inflater.inflate(R.layout.fragment_mbi, container, false);
+        final View MainView = inflater.inflate(R.layout.fragment_mbi, container, false);
 
 
         ViewResult = MainView.findViewById(R.id.textViewResult);
@@ -59,53 +58,38 @@ public class MBIFragment extends Fragment {
                 Weight = EditTextWeight.getText().toString();
                 double calculation = 0;
 
-                if(!Height.isEmpty() && !Weight.isEmpty()){
+                if (!Height.isEmpty() && !Weight.isEmpty()) {
 
                     DecimalFormat df = new DecimalFormat("##.#");
                     double height = Double.parseDouble(Height);
                     double weight = Double.parseDouble(Weight);
-                    calculation = weight/Math.pow(height/100,2);
+                    calculation =  weight / Math.pow(height / 100, 2);
                     double temp = calculation;
                     String result = df.format(temp);
-                    ViewResult.setText("BMI = "+result);
+                    ViewResult.setText("BMI = " + result);
 
-                } else{
+                    if ((int)calculation < 18.5) {
+                        ViewDescription.setText(R.string.textViewDesCase1);
+                    } else if ((int)calculation >= 18.5 && calculation <= 25) {
+                        ViewDescription.setText(R.string.textViewDesCase2);
+                    } else if ((int)calculation >= 25 && calculation <= 30) {
+                        ViewDescription.setText(R.string.textViewDesCase3);
+                    } else if ((int)calculation >= 30 && calculation <= 35) {
+                        ViewDescription.setText(R.string.textViewDesCase4);
+                    } else if ((int)calculation >= 35 && calculation <= 40) {
+                        ViewDescription.setText(R.string.textViewDesCase5);
+                    } else {
+                        ViewDescription.setText("" + R.string.textViewDesCase6);
+                    }
+
+                } else {
                     Toast.makeText(getActivity(), "বয়স আর উচ্চতা লিখুন", Toast.LENGTH_SHORT).show();
-                }
-
-
-                //I don't know why the fuck these code not working.
-                if(calculation < 18.5) {
-                    ViewDescription.setText("আপনার BMI Case 1");
-                    //ViewDescription.setText(R.string.textViewDesCase1);
-                } else if( calculation >= 18.5 && calculation <= 24.9) {
-                    ViewDescription.setText("আপনার BMI Case 2");
-                    //ViewDescription.setText(R.string.textViewDesCase2);
-                } else if( calculation >= 25 && calculation <= 29.9){
-                    ViewDescription.setText("আপনার BMI Case 3");
-                    //ViewDescription.setText(R.string.textViewDesCase3);
-                }
-                else if( calculation >= 30 && calculation <= 34.9){
-                    ViewDescription.setText("আপনার BMI Case 4");
-                    //ViewDescription.setText(R.string.textViewDesCase4);
-                }
-                else if( calculation >= 35 && calculation <= 39.9){
-                    ViewDescription.setText("আপনার BMI Case 5");
-                    //ViewDescription.setText(R.string.textViewDesCase5);
-                }
-                else if( calculation >= 40){
-                    ViewDescription.setText("আপনার BMI case 6");
-                    //ViewDescription.setText(R.string.textViewDesCase6);
-                }
-                else{
-                    ViewDescription.setText("No Case");
                 }
             }
         });
-
         return MainView; //inflater.inflate(R.layout.fragment_mbi, container, false);
-    }
 
+    }
 
 
 }

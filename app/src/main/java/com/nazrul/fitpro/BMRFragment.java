@@ -52,13 +52,6 @@ public class BMRFragment extends Fragment {
         ButtonBMRCalc = MainView.findViewById(R.id.buttonBMRcalc);
 
 
-        if(CheckBoxMale.isChecked()){
-            CheckBoxFemale.setActivated(false);
-        }
-        else if(CheckBoxFemale.isChecked()){
-            CheckBoxMale.setActivated(false);
-        }
-
         ButtonBMRCalc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,7 +70,7 @@ public class BMRFragment extends Fragment {
 
                     if(CheckBoxMale.isChecked()){
                         double calculate = 655 + (9.6 * weight) + (1.8 * height) - (4.7 * age);
-                        String result= df.format(calculate);
+                        String result = df.format(calculate);
 
                         TextViewResult.setText("BMR = "+result);
 

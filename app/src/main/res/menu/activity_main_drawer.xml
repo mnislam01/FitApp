@@ -19,7 +19,7 @@
         <item
             android:id="@+id/nav_alldayCalorie"
             android:icon="@drawable/alldaycal"
-            android:title="সারাদিনের ক্যালরি হিসাব" />
+            android:title="ক্যালরি হিসাব" />
         <item
             android:id="@+id/nav_suggestion"
             android:icon="@drawable/tips"
